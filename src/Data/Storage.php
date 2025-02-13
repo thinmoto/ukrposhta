@@ -28,12 +28,6 @@ class Storage
 		return $this->data;
 	}
 
-	public function __set($name, $value): Storage
-	{
-		$this->data[$name] = $value;
-		return $this;
-	}
-
 	public function __get($name)
 	{
 		return $this->data[$name];
