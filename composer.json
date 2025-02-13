@@ -1,12 +1,12 @@
 {
-    "name": "kex15i10/ukrposhta",
+    "name": "thinmoto/ukrposhta",
     "description": "Client for ukrposhta API",
     "type": "library",
     "keywords": ["ukrposhta", "укр почта", "укр пошта"],
     "repositories": [
         {
             "type": "vcs",
-            "url": "https://github.com/kex15i10/ukrposhta"
+            "url": "https://github.com/thinmoto/ukrposhta"
         }
     ],
     "autoload": {
