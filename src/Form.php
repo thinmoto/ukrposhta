@@ -59,7 +59,7 @@ class Form extends Request
 	{
 		return $this->send($url, $params, 'GET', function (ResponseInterface $response) use ($path, $fileName) {
 			$path = $this->getSavePath($path, $fileName);
-			file_put_contents($path, $response->getBody());
+			file_put_contents('/'.$path, $response->getBody());
 
 			return $path;
 		});
