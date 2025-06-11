@@ -58,10 +58,10 @@ class Client extends Api
 	public function setMainAddressId(string $customerUUID, int $addressId)
 	{
 		$params = [
-			'addresses' => [
+			'addresses' => [[
 				'addressId' => $addressId,
 				'main' => true
-			]
+			]]
 		];
 		$url = $this->getUrl(function (string $url) use ($customerUUID) {
 			return $url . "/{$customerUUID}";
